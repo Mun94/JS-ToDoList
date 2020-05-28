@@ -9,3 +9,17 @@ body{
     padding: 15px 20px;
     position: relative;
 }
+
+.js-form, .js-getting{
+  display: none;
+}
+
+.SHOWING_CN{
+    display: block;
+    position: absolute;
+    left : 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
