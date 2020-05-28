@@ -1,0 +1,11 @@
+body{
+    margin : 0;
+}
+
+.js-clock{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+}
