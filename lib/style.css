@@ -205,3 +205,9 @@ img{
         opacity: 1;
     }
 }
+
+.js-weather{
+    left: 3%;
+    top:3%;
+    position: fixed;
+}
