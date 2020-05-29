@@ -1,20 +1,207 @@
 body{
-    margin:0;
-}
-.js-form, .js-getting{  
-  display: none;
+        margin:0;
+        padding:0;
+        background-color: #be2edd;
+        color:	#f2afff
 }
 
-.SHOWING_CN, .js-clock, .js-toDoForm{
+*:focus{
+     outline:none;
+}
+
+.js-form, .js-getting{  
+    display: none;
+}
+
+.js-clock{
+    text-align: center;
+    font-size: 40px;
+    margin:0 auto;
+}
+.clock{
+    margin-top: 60px;
+    margin-bottom:10px;
+}
+
+.SHOWING_CN{
+    font-size: 25px;
     display: block;
     text-align: center;
 }
 
-h1{
-    margin-top: 20%;
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
-.js-toDoList{
-    display: inline;
+.js-toDoForm,.js-toDoList{
     text-align: center;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+span{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2afff;
+}
+
+.logoutBtn{
+    display: block;
+    margin: 0 auto;
+    background: none;
+    cursor: pointer;
+    border:none;
+}
+
+.logoutBtn:hover{
+    background: yellow;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.delBtn{
+    margin-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delBtn:hover{
+    background: yellow;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 10px;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+ a:hover{
+    background: pink;
+    box-shadow: 0 0 50px rgb(216, 202, 202), 0 0 50px #f9ca24, 0 0px 50px pink; 
+
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #f9ca24, pink);
+}
+
+a:hover span:nth-child(1){
+    left:100%;
+    transition: 1s;
+ }
+
+ a span:nth-child(2){
+    top: -100%;
+    right: 1px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #f9ca24, pink);
+}
+
+a:hover span:nth-child(2){
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+ }
+
+ a span:nth-child(3){
+    bottom:-10px;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #f9ca24, pink);
+}
+
+a:hover span:nth-child(3){
+   right:100%;
+   transition: 1s;
+}
+
+a span:nth-child(4){
+    top : 100%;
+    left : 1px;
+    width: 2px;
+    height: 100%;
+
+    background: linear-gradient(to top, #f9ca24, pink);
+}
+
+a:hover span:nth-child(4){
+    top:-100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+#grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:20px;
+    margin-left: 200px;
+    margin-right: 150px;
+    border : 2px solid gray;
+  }
+
+img{
+    max-width : 350px;
+    height: auto;
+    margin:auto;
+}
+
+.bgImage{
+    animation: fadeIn 2s linear;
+}
+
+@media(max-width:800px)
+{
+#grid
+{
+  display:block;
+  margin:0 auto;
+  border:none;
+  text-align: center;
+}
+.js-toDoList{
+    margin-bottom: 30px;
+}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

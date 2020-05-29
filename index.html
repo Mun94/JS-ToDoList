@@ -4,27 +4,43 @@
         <meta charset = "utf-8">
         <title>ToDoList</title>
         <link rel = "stylesheet" href = "./lib/style.css">
+        <script src="https://kit.fontawesome.com/5b48b260d6.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class = "js-clock">
-            <h1>00:00</h1>
+            <h1 class = clock>00:00</h1>
         </div>
 
         <form class = "js-form">
+            <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             <input type = "text" placeholder = "what is your name">
+            </a>
         </form>
         <div class = "name">
         <h4 class = "js-getting"></h4>
         </div>
         
         <form class = "js-toDoForm">
-            <input type = "text" placeholder="write a to do">
+            <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type = "text" placeholder="write a to do">
+            </a>
         </form>
-        <ul class = "js-toDoList"></ul>
-
+            <div id ="grid">
+                <ul class = "js-toDoList"></ul>
+            </div>
+      
         <script src = "./lib/clock.js"></script>
         <script src = "./lib/getting.js"></script>
         <script src = "./lib/todo.js"></script>
+        <script src = "./lib/bg.js"></script>
     </body>
 </html>
