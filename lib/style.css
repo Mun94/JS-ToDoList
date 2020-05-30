@@ -19,8 +19,10 @@ body{
     margin:0 auto;
 }
 .clock{
-    margin-top: 60px;
+    position: relative;
+    margin-top: 50px;
     margin-bottom:10px;
+    display: inline-block;
 }
 
 .SHOWING_CN{
@@ -210,4 +212,11 @@ img{
     left: 3%;
     top:3%;
     position: fixed;
+}
+
+font{
+    position: absolute;
+    left:-1%;
+    top:59%;
+    transform:translateX(-60%);
 }
